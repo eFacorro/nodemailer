@@ -23,8 +23,8 @@ let transporter = nodemailer.createTransport({    // https://www.youtube.com/wat
 });
 
 let mailOptions = {
-  from: "process.env.MAIL_FROM",
-  to: "process.env.MAIL_TO",
+  from: process.env.MAIL_FROM,
+  to: process.env.MAIL_TO,
   subject: 'Nodemailer Project',
   text: 'Hi from your nodemailer project'
 };
