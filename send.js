@@ -12,7 +12,7 @@ const nodemailer = require('nodemailer');
 //   }
 // });
 
-let transporter = nodemailer.createTransport({    // https://www.youtube.com/watch?v=KjheexBLY4A
+let transporter = nodemailer.createTransport({    // https://youtu.be/TvOfrZnaunQ?t=127
   host: "smtp.gmail.com",
   port: 465 ,
   secure: true,
