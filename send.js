@@ -23,10 +23,10 @@ let transporter = nodemailer.createTransport({    // https://youtu.be/TvOfrZnaun
 });
 
 let mailOptions = {
-  from: process.env.MAIL_FROM,
+  from:`"Mi app" <${process.env.MAIL_FROM}>` ,
   to: process.env.MAIL_TO,
-  subject: 'Nodemailer Project',
-  text: 'Hi from your nodemailer project'
+  subject: 'Correo de verificación',
+  text: 'Verifica tu email para usar la aplicacion'
 };
 
 transporter.sendMail(mailOptions, function(err, data) {
